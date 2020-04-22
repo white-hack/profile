@@ -33,9 +33,9 @@ function App() {
       <div>
         システム開発のサービスの初期段階からコーディング、テストまでの開発や相談を請け負います。<br/>
       </div>
-      <h4 style={{marginBottom: '0.5rem'}}>仕事の実績</h4>
+      <h4 style={{marginBottom: '0.5rem'}}>経歴</h4>
       <div>
-        KDDI(au)　2013年 4月 〜 2016年 11月
+        KDDI株式会社　2013年 4月 〜 2016年 11月
       </div>
       <div style={{marginTop: '0.25rem'}}>
         株式会社SONY 　2016年 12月 〜 2019年 7月
@@ -49,6 +49,9 @@ function App() {
         応相談
       </div>
       <h4 style={{marginBottom: '0.5rem'}}>お問い合わせ先</h4>
+      <div>
+        White-hack
+      </div>
       <div>
         <a href="mailto:whitehackfree@gmail.com">whitehackfree@gmail.com</a>
       </div>
