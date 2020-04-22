@@ -29,122 +29,28 @@ function App() {
 
   return (
     <div style={{marginTop: '2rem', marginLeft: '2rem'}}>
-      <div style={{display: 'flex'}}>
-        <div>
-          <div>
-            <select defaultValue={main} onChange={changeMain}>
-              <option value="meat">肉</option>
-              <option value="fish">魚</option>
-              <option value="egg">卵</option>
-            </select>
-          </div>
-          <div style={{marginTop: '0.5rem'}}>
-            {main === 'meat' && (
-              <select defaultValue={sub} onChange={(e) => setSub(e.target.value)}>
-                <option value=""></option>
-                <option value="chicken">鳥肉</option>
-                <option value="beaf">牛肉</option>
-                <option value="pork">豚肉</option>
-              </select>
-            )}
-            {main === 'fish' && (
-              <select defaultValue={sub} onChange={(e) => setSub(e.target.value)}>
-                <option value=""></option>
-                <option value="saba">サバ</option>
-                <option value="shake">シャケ</option>
-              </select>
-            )}
-          </div>
-        </div>
-        <div style={{marginLeft: '1rem'}}>
-          <div>
-            <select style={{marginLeft: "0.5rem"}}>
-              <option>味噌汁</option>
-              <option>魚</option>
-              <option>卵</option>
-            </select>
-          </div>
-        </div>
-        <div style={{marginLeft: '1rem'}}>
-          <div>
-            <select style={{marginLeft: "0.5rem"}}>
-              <option>サラダ</option>
-              <option>魚</option>
-              <option>卵</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <button style={{marginLeft: "0.5rem"}}　onClick={autoSelect}>自動選択</button>
-        </div>
+      <h4 style={{marginBottom: '0.5rem'}}>サービス内容</h4>
+      <div>
+        システム開発のサービスの初期段階からコーディング、テストまでの開発や相談を請け負います。<br/>
       </div>
-      <div style={{display: 'flex'}}>
-        <div style={{marginTop: "1rem"}}>
-          {main === 'meat' && (
-            <select id="select" value={select} size="10" onChange={changeSelect} multiple>
-              <option value="牛丼">牛丼</option>
-              <option value="鳥の唐揚げ">鳥の唐揚げ</option>
-            </select>
-          )}
-          {main === 'fish' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-          {main === 'egg' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-          <div style={{marginTop: '1rem'}}>
-            {name}
-            <div>
-              {!!url && <a href={url} target="_blank" rel="noopener noreferrer">レシピ</a>}
-            </div>
-          </div>
-        </div>
-        <div style={{marginTop: "1rem", marginLeft: '1rem'}}>
-          {main === 'meat' && (
-            <select id="select" value={select} size="10" onChange={changeSelect} multiple>
-              <option value="牛丼">大根</option>
-              <option value="鳥の唐揚げ">玉ねぎ</option>
-            </select>
-          )}
-          {main === 'fish' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-          {main === 'egg' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-        </div>
-        <div style={{marginTop: "1rem", marginLeft: '1rem'}}>
-          {main === 'meat' && (
-            <select id="select" value={select} size="10" onChange={changeSelect} multiple>
-              <option value="牛丼">大根</option>
-              <option value="鳥の唐揚げ">玉ねぎ</option>
-            </select>
-          )}
-          {main === 'fish' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-          {main === 'egg' && (
-            <select size="10" multiple>
-              <option>牛丼</option>
-              <option>鳥の唐揚げ</option>
-            </select>
-          )}
-        </div>
+      <h4 style={{marginBottom: '0.5rem'}}>仕事の実績</h4>
+      <div>
+        KDDI(au)　2013年 4月 〜 2016年 11月
+      </div>
+      <div style={{marginTop: '0.25rem'}}>
+        株式会社SONY 　2016年 12月 〜 2019年 7月
+      </div>
+      <h4 style={{marginBottom: '0.5rem'}}>制作範囲</h4>
+      <div>
+        Web、サーバーサイド、モバイルの開発。
+      </div>
+      <h4 style={{marginBottom: '0.5rem'}}>料金案内</h4>
+      <div>
+        応相談
+      </div>
+      <h4 style={{marginBottom: '0.5rem'}}>お問い合わせ先</h4>
+      <div>
+        <a href="mailto:whitehackfree@gmail.com">whitehackfree@gmail.com</a>
       </div>
     </div>
   );
